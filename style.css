@@ -1,3 +1,8 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
 .country {
     padding-top: 15px;
     padding-right: 30px;
@@ -88,4 +93,18 @@ a:hover {
     text-align: center;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 
