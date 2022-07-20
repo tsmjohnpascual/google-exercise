@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const fetch = require('node-fetch');
+const path = require("path")
 
 const options = {
 	method: 'GET',
@@ -19,12 +20,14 @@ function displayData (text) {
     display.textContent = text;
 
 }
+
 const port = 3000;
 app.listen(port, () => {
     console.log(`Server listening on ${port}`)
 })
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.use(express.static(__dirname + "/../client"))
+app.get('/', (req, res) => res.sendFile(path.resolve("../client/index.html")))
 
 
 
@@ -34,4 +37,4 @@ app.get ('/search', (req, res) => {
 	.then(response => res.json(response))
 	.catch(err => console.error(err));
     
-});
+})
