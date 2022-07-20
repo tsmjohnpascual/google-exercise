@@ -1,0 +1,206 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+.country {
+    padding-top: 1px;
+    padding-right: 30px;
+    padding-bottom: 15;
+    padding-left: 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+    background-color: #F1F1F1;
+}
+
+.carbon_neutral, .carbon {
+    color:#70757a;
+    background-color: #F1F1F1;
+}
+
+.carbon_neutral {
+    display: flex;
+    padding: 15px;
+    white-space: nowrap;
+    justify-content: center;
+    order: 2;
+}
+
+.leaf {
+    width: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.set_1 {
+    display:flex;
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
+}
+
+.set_2 {
+    display:flex;
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 3;
+}
+
+.set_anchors {
+    color:#70757a;
+    background-color: #F1F1F1;
+
+    display: block;
+    padding: 15px;
+    /* white-space: nowrap; */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-shrink: 0; */
+    box-sizing: border-box;
+    background-color: #F1F1F1;
+    margin-top: auto;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    text-align: center;
+}
+
+.search_bar {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap:break-word;
+    outline: none;
+    display: block;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: -37px;
+    height: 35px;
+    font-size: 16px;
+    position: relative;
+    top: 40px;
+    left: 20px;
+    width: 100%;
+}
+
+.searchIcon {
+    margin-top: 15px;
+    margin-left: 20px;
+    color: gray
+}
+
+.micIcon {
+    color: #4285F4;
+    margin-top: 15px;
+    margin-right: 20px;
+
+}
+
+.sBarDisplay {
+    display: flex;
+    z-index: 3;
+    height: 44px;
+    background-color: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 584px;
+}
+
+.sBarDisplay:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.sBtns {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    padding-top:18px;
+    height:70px;
+}
+
+.search_button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 27px;
+    height: 26px;
+    min-width: 54px;
+    text-align: center;
+}
+
+.search_button:hover {
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position:relative;
+    top: 200px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+form {
+    position: relative;
+    top: 250px;
+}
