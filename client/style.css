@@ -4,7 +4,7 @@ body {
 }
 
 .country {
-    padding-top: 15px;
+    padding-top: 1px;
     padding-right: 30px;
     padding-bottom: 15;
     padding-left: 30px;
@@ -25,6 +25,10 @@ body {
     white-space: nowrap;
     justify-content: center;
     order: 2;
+}
+
+.leaf {
+    width: 12px;
 }
 
 a {
@@ -51,16 +55,18 @@ a {
 
     display: block;
     padding: 15px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
-.footer_container {
+.footer-container {
     display: flex;
-    flex-shrink: 0;
-    box-sizing:border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-shrink: 0; */
+    box-sizing: border-box;
     background-color: #F1F1F1;
     margin-top: auto;
-    height:50px;
+    text-align: center;
 }
 
 ul {
@@ -78,6 +84,10 @@ a {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: black;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 a:hover {
@@ -138,6 +148,10 @@ a:hover {
     max-width: 584px;
 }
 
+.sBarDisplay:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
 .sBtns {
     display: block;
     text-align: center;
@@ -162,7 +176,11 @@ a:hover {
     height: 26px;
     min-width: 54px;
     text-align: center;
-    
+}
+
+.search_button:hover {
+    border: 1px solid lightgray;
+    cursor: pointer;
 }
 
 .main-container {
