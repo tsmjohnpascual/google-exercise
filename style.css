@@ -88,4 +88,62 @@ a:hover {
     text-align: center;
 }
 
+.search_bar {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap:break-word;
+    outline: none;
+    display: block;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: -37px;
+    height: 35px;
+    font-size: 16px;
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+.sBarDisplay {
+    display: flex;
+    z-index: 3;
+    height: 44px;
+    background-color: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 584px;
+}
+
+.sBtns {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    padding-top:18px;
+    height:70px;
+}
+
+.search_button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 27px;
+    height: 26px;
+    min-width: 54px;
+    text-align: center;
+    
+}
+
 
