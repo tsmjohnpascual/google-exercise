@@ -40,13 +40,25 @@ app.get('/', (req, res) => res.sendFile(path.resolve("../client/index.html")))
     
 // })
 
+// app.post("/", (req, res) => {
+
+//     const url = "https://google-search3.p.rapidapi.com/api/v1/search/q="
+//     let search = req.body.q
+//     console.log(search)
+//     fetch(url + search, options)
+//     .then(response => response.json())
+//     .then(response => console.log(response))
+
+// })
+
 app.post("/", (req, res) => {
 
     const url = "https://google-search3.p.rapidapi.com/api/v1/search/q="
     let search = req.body.q
-    console.log(search)
     fetch(url + search, options)
     .then(response => response.json())
-    .then(response => console.log(response))
+    .then(response => {
+        res.redirect(response.results[0].link)
+    })
 
 })
