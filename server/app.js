@@ -3,6 +3,7 @@ const app = express();
 const cors = require('cors');
 const fetch = require('node-fetch');
 const path = require("path")
+const bodyParser = require("body-parser")
 
 const options = {
 	method: 'GET',
@@ -26,15 +27,26 @@ app.listen(port, () => {
     console.log(`Server listening on ${port}`)
 })
 
+app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static(__dirname + "/../client"))
+
 app.get('/', (req, res) => res.sendFile(path.resolve("../client/index.html")))
 
-
-
-app.get ('/search', (req, res) => {
-    fetch('https://google-search3.p.rapidapi.com/api/v1/search/q=elon+musk', options)
-	.then(response => response.json())
-	.then(response => res.json(response))
-	.catch(err => console.error(err));
+// app.get('/search', (req, res) => {
+//     fetch('https://google-search3.p.rapidapi.com/api/v1/search/q=elon+musk', options)
+// 	.then(response => response.json())
+// 	.then(response => res.json(response))
+// 	.catch(err => console.error(err));
     
+// })
+
+app.post("/", (req, res) => {
+
+    const url = "https://google-search3.p.rapidapi.com/api/v1/search/q="
+    let search = req.body.q
+    console.log(search)
+    fetch(url + search, options)
+    .then(response => response.json())
+    .then(response => console.log(response))
+
 })
