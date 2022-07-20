@@ -13,6 +13,7 @@ app.listen(port, () => {
 
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static(__dirname + "/../client"))
+app.use(express.static(__dirname + "/../client/assets"));
 
 app.get('/', (req, res) => res.sendFile(path.resolve("../client/index.html")))
 

@@ -109,6 +109,20 @@ a:hover {
     position: relative;
     top: 40px;
     left: 20px;
+    width: 100%;
+}
+
+.searchIcon {
+    margin-top: 15px;
+    margin-left: 20px;
+    color: gray
+}
+
+.micIcon {
+    color: #4285F4;
+    margin-top: 15px;
+    margin-right: 20px;
+
 }
 
 .sBarDisplay {
