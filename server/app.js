@@ -19,6 +19,7 @@ app.get('/', (req, res) => res.sendFile(path.resolve("../client/index.html")))
 
 app.post("/", (req, res) => {
 
+    console.log(req.body)
     let search = req.body.q
     if (req.body.searchBtn == "Google Search") {
         searchFunctions.googleSearch(search, res)
